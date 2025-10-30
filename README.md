@@ -36,8 +36,8 @@ MedSystemML - это современная платформа для реаби
 
 \`\`\`bash
 # Клонирование репозитория
-git clone git@github.com:vavbeat/vibro-ai-coach.git
-cd vibro-ai-coach
+git clone git@github.com:vavbeat/MedSystemML.git
+cd MedSystemML
 
 # Установка зависимостей
 npm install
