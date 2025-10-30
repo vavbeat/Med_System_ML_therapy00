@@ -81,17 +81,17 @@ const recentPatients = [
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col gap-6 p-8">
+    <div className="flex flex-col gap-4 p-4 sm:p-6 lg:p-8">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-          <p className="text-muted-foreground mt-1">
-            Добро пожаловать в систему управления вибротерапией
+          <h1 className="text-2xl sm:text-3xl font-bold text-foreground">Панель управления</h1>
+          <p className="text-muted-foreground mt-1 text-sm sm:text-base">
+            Добро пожаловать в систему управления вибротерапией ВекЗдоровья
           </p>
         </div>
         <Link to="/patients/new">
-          <Button className="bg-primary hover:bg-primary-dark">
+          <Button className="bg-primary hover:bg-primary-dark w-full sm:w-auto">
             Добавить пациента
           </Button>
         </Link>
