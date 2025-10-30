@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
+# MedSystemML - Медицинская система с ИИ-ассистентом
 
-## Project info
+## Описание проекта
 
-**URL**: https://lovable.dev/projects/98a66e3f-1f7b-424b-a7a3-7df6b2a2db71
+MedSystemML - это современная платформа для реабилитологов с интегрированным ИИ-ассистентом, предназначенная для улучшения качества медицинского обслуживания и автоматизации рабочих процессов в медицинских учреждениях.
 
-## How can I edit this code?
+## Основные функции
 
-There are several ways of editing your application.
+- 🤖 ИИ-ассистент для медицинских консультаций
+- 👥 Управление пациентами и их данными
+- 📅 Система планирования и календарь приемов
+- 🗺️ 3D визуализация анатомии человека
+- 📊 Аналитика и отчетность
+- 📱 Адаптивный интерфейс для всех устройств
 
-**Use Lovable**
+## Технологии
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/98a66e3f-1f7b-424b-a7a3-7df6b2a2db71) and start prompting.
+Проект построен на основе современных технологий:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18, TypeScript
+- **Сборщик**: Vite
+- **UI компоненты**: shadcn-ui, Radix UI
+- **Стилизация**: Tailwind CSS
+- **3D графика**: React Three Fiber, Three.js
+- **Маршрутизация**: React Router DOM
+- **Состояние**: TanStack Query
 
-**Use your preferred IDE**
+## Установка и запуск
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Предварительные требования
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (версия 16 или выше)
+- npm или yarn
 
-Follow these steps:
+### Локальная разработка
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+\`\`\`bash
+# Клонирование репозитория
+git clone git@github.com:vavbeat/vibro-ai-coach.git
+cd vibro-ai-coach
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Установка зависимостей
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Запуск в режиме разработки
 npm run dev
-```
+\`\`\`
 
-**Edit a file directly in GitHub**
+Приложение будет доступно по адресу \`http://localhost:8080\`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Сборка для продакшена
 
-**Use GitHub Codespaces**
+\`\`\`bash
+# Сборка проекта
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Предварительный просмотр сборки
+npm run preview
+\`\`\`
 
-## What technologies are used for this project?
+### Доступные скрипты
 
-This project is built with:
+- \`npm run dev\` - запуск в режиме разработки
+- \`npm run build\` - сборка для продакшена
+- \`npm run build:dev\` - сборка в режиме разработки
+- \`npm run lint\` - проверка кода линтером
+- \`npm run preview\` - предварительный просмотр собранного проекта
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Структура проекта
 
-## How can I deploy this project?
+\`\`\`
+src/
+├── components/          # Переиспользуемые компоненты
+│   ├── ui/             # Базовые UI компоненты
+│   ├── patient/        # Компоненты для работы с пациентами
+│   ├── Layout.tsx      # Основной лейаут приложения
+│   └── AIAssistant.tsx # ИИ-ассистент
+├── pages/              # Страницы приложения
+│   ├── Auth.tsx        # Страница авторизации
+│   ├── Dashboard.tsx   # Главная панель
+│   ├── Patients.tsx    # Управление пациентами
+│   └── Calendar.tsx    # Календарь приемов
+├── hooks/              # Пользовательские хуки
+├── lib/                # Утилиты и конфигурация
+└── public/             # Статические ресурсы
+    ├── 3d-models/      # 3D модели анатомии
+    └── skeleton-models/# Модели скелета
+\`\`\`
 
-Simply open [Lovable](https://lovable.dev/projects/98a66e3f-1f7b-424b-a7a3-7df6b2a2db71) and click on Share -> Publish.
+## Вклад в проект
 
-## Can I connect a custom domain to my Lovable project?
+Мы приветствуем вклад в развитие проекта! Пожалуйста:
 
-Yes, you can!
+1. Создайте форк репозитория
+2. Создайте ветку для новой функции (\`git checkout -b feature/AmazingFeature\`)
+3. Зафиксируйте изменения (\`git commit -m 'Add some AmazingFeature'\`)
+4. Отправьте изменения в ветку (\`git push origin feature/AmazingFeature\`)
+5. Откройте Pull Request
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Лицензия
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Этот проект распространяется под лицензией MIT. Подробности в файле \`LICENSE\`.
+
+## Поддержка
+
+Если у вас есть вопросы или предложения, пожалуйста, создайте issue в этом репозитории.
